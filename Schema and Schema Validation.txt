@@ -1,0 +1,42 @@
+- Although MongoDB is Schemaless, but in real-world we need schema 
+- Three approaches for Schema are
+1. This approach is very rare where Schema of each document is different
+[
+  {
+	name: "iphone"
+	price: 12655
+  },
+  {
+	title: "A science fiction story"
+	price: 1000
+  }
+]
+
+
+2. This is one of 2 most used approach where there is Schema defined but also some additional fields are present
+[
+  {
+	name: "The prisoner of Zelda"
+	price: 12655
+  },
+  {
+	name: "7 wonders of the World"
+	price: 12655
+	author: "John Lake"
+  }
+]
+
+3. This is one of 2 most used approach where there is same Schema for all documents
+
+[
+  {
+	name: "The prisoner of Zelda"
+	price: 12655
+  },
+  {
+	name: "7 wonders of the World"
+	price: 12655
+  }
+]
+
+- View Schema Validation in userSchema.js

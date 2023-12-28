@@ -1,0 +1,6 @@
+- In non-relational DB, we have collection (same as tables in relational) and documents (same as table rows)
+- A collection is a collection of two or more documents
+- A column in relational DB is same as field of document in non-relational DB
+- Non-relational DB is schema-less and can be normalized or not
+- We use JSON format to add, update, delete, remove data in MongoDB and MongoDB converts it into BSON (Binary JSON) behind the scenes to make it super fast and super efficient
+- test is default db

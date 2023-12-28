@@ -1,0 +1,70 @@
+- Can be made in either two ways
+1. Using embedded docs:
+Use Cases: One-to-one relation (Like Every customer has unique email and phone) e.g.
+			Customer collection
+[
+  {
+    _id: ObjectId('6587d79b41002f1d2b71682c'),
+    name: 'Moiz',
+    contact: {email: "moiz@gmail.com", PIN: 3784658764}
+  },
+  {
+    _id: ObjectId('6587d79b41002f1d2b71682c'),
+    name: 'Asad',
+    contact: {email: "moiz@gmail.com", PIN: 3784658764}
+  }
+]
+Advantage: Query is faster
+Disadvantage: Code may be redundant
+
+2. Using References: Here we only store id of that key in 1st collection which we wanna reference in 2nd collection 
+Disadvantage: Query is slower
+Advantage: Code is less redundant
+Use cases: Like in streaming apps where we don't have concern with address much for each query. We simply wanna know which city has a lot audience (Analytics purpose) e.g.
+
+				Customer Collection
+[ 
+  {
+    _id: ObjectId('6587d79b41002f1d2b71682c'),
+    name: 'John',
+    address: ObjectId('6587d75d41002f1d2b71682a')
+  },
+  {
+    _id: ObjectId('6587d7b741002f1d2b71682d'),
+    name: 'Mark',
+    address: ObjectId('6587d75d41002f1d2b71682b')
+  }
+]
+
+				Address Collection
+[
+  {
+    _id: ObjectId('6587d75d41002f1d2b71682a'),
+    city: 'London',
+    country: 'UK',
+    PIN: 2627863462,
+    houseNo: 56,
+    street: 'salt lake'
+  },
+  {
+    _id: ObjectId('6587d75d41002f1d2b71682b'),
+    city: 'Berlin',
+    country: 'Germany',
+    PIN: 26282084462,
+    houseNo: 78,
+    street: 'park avenue'
+  }
+]
+
+Make sure to match address in Customer collection to match with _id in Address collection to establish reference
+
+ - Now to query multiple documents, we use "$lookup" operator. It takes 4 fields
+1. from: "collection name to be merged with current collection". ("address" in this case)
+2. localField: "which field in current collection is referencing the 2nd collection". ("address" in this case)
+3. foreignField: "which field in 2nd collection is being referenced by 1st collection". ("_id" in this case)
+4. as: "alias to call the merged field" ("addr" like maybe we wanna call it addr in this case)
+- Below is the code to fetch address from address collection in the customer collection
+
+db.customer.aggregate({$lookup: {from: "address", localField: "address", foreignField: "_id", as: "addr"}})
+
+- 2nd use is "Many to Many Relationship" always
