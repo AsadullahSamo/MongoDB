@@ -32,13 +32,8 @@ const movieSchema = new mongoose.Schema({        // In this schema, we can defin
     },
     createdAt: {
         type: Date,
-        default: Date.now().toString({
-            minute: "2-digit",
-            hour: "2-digit",
-            day: "short",
-            month: "short",
-            year: "numeric",
-        })
+        default: Date.now(),
+        select: false      // This will not be shown in the response. This is useful for fields like password
     },
     genres: {
         type: [String],     // Array of strings

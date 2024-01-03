@@ -1,183 +1,548 @@
 [
-    {
-	  "name": "Riddick",
-	  "description": "Left for dead on a sun-scorched planet, Riddick finds himself up against an alien race of predators. Activating an emergency beacon alerts two ships: one carrying a new breed of mercenary, the other captained by a man from Riddick's past.",
-	  "duration": 119,
-	  "ratings": 6.8,
-	  "totalRating": 329,
-	  "releaseYear": 2013,
-	  "releaseDate": "2013-09-04T00:00:00Z",
-	  "genres": [
-	  	  "Action",
-		  "Sci-Fi",
-		  "Thriller"
-      ],
-	  "directors": [ "David Twohy" ],
-	  "coverImage": "Riddick-2013.jpg",
-	  "actors": [
-	  	  "Vin Diesel",
-		  "Karl Urban",
-		  "Katee Sackhoff"
-	  ],
-	  "price": 50
-	},
-    {
-      "releaseYear": 2013,
-      "name": "We're the Millers",
-      "directors": [ "Rawson Marshall Thurber" ],
-      "releaseDate": "2013-08-03T00:00:00Z",
-      "ratings": 7.2,
-	  "totalRating": 230,
-      "genres": [
-        "Comedy",
-        "Crime"
-      ],
-      "coverImage": "we-are-the-millers-2013.jpg",
-      "description": "A veteran pot dealer creates a fake family as part of his plan to move a huge shipment of weed into the U.S. from Mexico.",
-      "duration": 110,
-      "actors": [
-        "Jason Sudeikis",
-        "Jennifer Aniston",
-        "Emma Roberts"
-      ],
-      "price": 47
-    },
-    {
-      "releaseYear": 2014,
-      "name": "Divergent",
-      "directors": [ "Neil Burger" ],
-	  "releaseDate": "2014-03-20T00:00:00Z",
-	  "ratings": 6.4,
-	  "totalRating": 164,
-	  "genres": [
-		"Action",
-		"Adventure",
-		"Romance",
-		"Sci-Fi"
-      ],
-	  "coverImage": "Divergent-2014.jpg",
-	  "description": "Beatrice Prior, a teenager with a special mind, finds her life threatened when an authoritarian leader seeks to exterminate her kind in her effort to seize control of their divided society.",
-	  "duration": 117,
-	  "actors": [
-		"Shailene Woodley",
-		"Kate Winslet",
-		"Zoe Kravitz"
-	  ],
-	  "price": 52
-    },
-    {
-      "releaseYear": 2013,
-      "name": "Elysium",
-      "directors": [ "Neill Blomkamp" ],
-      "releaseDate": "2013-08-07T00:00:00Z",
-      "ratings": 7,
-	  "totalRating": 436,
-      "genres": [
-        "Action",
-        "Drama",
-        "Sci-Fi",
-        "Thriller"
-      ],
-      "coverImage": "Elysium-2013.jpg",
-      "description": "Set in the year 2154, where the very wealthy live on a man-made space station while the rest of the population resides on a ruined Earth, a man takes on a mission that could bring equality to the polarized worlds.",
-      "duration": 109,
-      "actors": [
-        "Matt Damon",
-        "Jodie Foster",
-        "Sharlto Copley"
-      ],
-      "price": 65
-    },
-    {
-      "releaseYear": 2014,
-      "name": "RoboCop",
-      "directors": [ "Jose Padilha" ],
-      "releaseDate": "2014-01-30T00:00:00Z",
-	  "ratings": 7.7,
-	  "totalRating": 310,
-      "genres": [
-        "Action",
-        "Crime",
-        "Sci-Fi",
-        "Thriller"
-      ],
-      "coverImage": "RoboCop-2014.jpg",
-      "description": "In 2028 Detroit, when Alex Murphy (Joel Kinnaman) - a loving husband, father and good cop - is critically injured in the line of duty, the multinational conglomerate OmniCorp sees their chance for a part-man, part-robot police officer.",
-      "duration": 110,
-      "actors": [
-        "Joel Kinnaman",
-        "Douglas Urbanski",
-        "Abbie Cornish"
-      ],
-      "price": 40
-    },
-    {
-      "releaseYear": 2014,
-      "name": "Captain America: The Winter Soldier",
-      "directors": [
-        "Anthony Russo",
-        "Joe Russo"
-      ],
-      "releaseDate": "2014-04-02T00:00:00Z",
-	  "ratings": 7.9,
-	  "totalRating": 239,
-      "genres": [
-        "Action",
-        "Adventure",
-        "Sci-Fi"
-      ],
-      "coverImage": "captain-america-the-winter-soldier-2014.jpg",
-      "description": "Steve Rogers struggles to embrace his role in the modern world and teams up with Natasha Romanoff, aka Black Widow, to battle a powerful yet shadowy enemy in present-day Washington, D.C.",
-      "duration": 135,
-      "actors": [
-        "Chris Evans",
-        "Frank Grillo",
-        "Sebastian Stan"
-      ],
-      "price": 57
-    },
-    {
-      "releaseYear": 2013,
-      "name": "Behind the Candelabra",
-      "directors": [ "Steven Soderbergh" ],
-      "releaseDate": "2013-05-21T00:00:00Z",
-      "ratings": 7,
-	  "totalRating": 325,
-      "genres": [
-        "Biography",
-        "Drama",
-        "Romance"
-      ],
-      "coverImage": "behind-the-candelabra-2013.jpg",
-      "description": "Based on the autobiographical novel, the tempestuous 6-year relationship between Liberace and his (much younger) lover, Scott Thorson, is recounted.",
-      "duration": 118,
-      "actors": [
-        "Matt Damon",
-        "Scott Bakula",
-        "Eric Zuckerman"
-      ],
-      "price": 59
-    },
-    {
-      "releaseYear": 2012,
-      "name": "The Dark Knight Rises",
-      "directors": [ "Christopher Nolan" ],
-      "releaseDate": "2012-07-16T00:00:00Z",
-      "ratings": 8.6,
-	  "totalRating": 530,
-      "genres": [
-        "Action",
-        "Crime",
-        "Thriller"
-      ],
-      "coverImage": "the-dark-knight-rises-2012.jpg",
-      "description": "Eight years on, a new evil rises from where the Batman and Commissioner Gordon tried to bury it, causing the Batman to resurface and fight to protect Gotham City... the very city which brands him an enemy.",
-      "duration": 165,
-      "actors": [
-        "Christian Bale",
-        "Tom Hardy",
-        "Anne Hathaway"
-      ],
-      "price": 57
-    }
-  ]
+  {
+    "_id": "659021096854259411f5d1e3",
+    "name": "Riddick",
+    "description": "Left for dead on a sun-scorched planet, Riddick finds himself up against an alien race of predators. Activating an emergency beacon alerts two ships: one carrying a new breed of mercenary, the other captained by a man from Riddick's past.",
+    "duration": 119,
+    "rating": 1,
+    "totalRating": 329,
+    "releaseYear": 2013,
+    "releaseDate": "2013-09-04T00:00:00.000Z",
+    "createdAt": "2023-12-30T13:53:54.065Z",
+    "genres": [
+      "Action",
+      "Sci-Fi",
+      "Thriller"
+    ],
+    "directors": [
+      "David Twohy"
+    ],
+    "coverImage": "Riddick-2013.jpg",
+    "actors": [
+      "Vin Diesel",
+      "Karl Urban",
+      "Katee Sackhoff"
+    ],
+    "price": 50,
+    "__v": 0
+  },
+  {
+    "_id": "659021096854259411f5d1e6",
+    "name": "Elysium",
+    "description": "Set in the year 2154, where the very wealthy live on a man-made space station while the rest of the population resides on a ruined Earth, a man takes on a mission that could bring equality to the polarized worlds.",
+    "duration": 109,
+    "rating": 1,
+    "totalRating": 436,
+    "releaseYear": 2013,
+    "releaseDate": "2013-08-07T00:00:00.000Z",
+    "createdAt": "2023-12-30T13:53:54.065Z",
+    "genres": [
+      "Action",
+      "Drama",
+      "Sci-Fi",
+      "Thriller"
+    ],
+    "directors": [
+      "Neill Blomkamp"
+    ],
+    "coverImage": "Elysium-2013.jpg",
+    "actors": [
+      "Matt Damon",
+      "Jodie Foster",
+      "Sharlto Copley"
+    ],
+    "price": 65,
+    "__v": 0
+  },
+  {
+    "_id": "659021096854259411f5d1e7",
+    "name": "RoboCop",
+    "description": "In 2028 Detroit, when Alex Murphy (Joel Kinnaman) - a loving husband, father and good cop - is critically injured in the line of duty, the multinational conglomerate OmniCorp sees their chance for a part-man, part-robot police officer.",
+    "duration": 110,
+    "rating": 1,
+    "totalRating": 310,
+    "releaseYear": 2014,
+    "releaseDate": "2014-01-30T00:00:00.000Z",
+    "createdAt": "2023-12-30T13:53:54.065Z",
+    "genres": [
+      "Action",
+      "Crime",
+      "Sci-Fi",
+      "Thriller"
+    ],
+    "directors": [
+      "Jose Padilha"
+    ],
+    "coverImage": "RoboCop-2014.jpg",
+    "actors": [
+      "Joel Kinnaman",
+      "Douglas Urbanski",
+      "Abbie Cornish"
+    ],
+    "price": 40,
+    "__v": 0
+  },
+  {
+    "_id": "659021096854259411f5d1e8",
+    "name": "Captain America: The Winter Soldier",
+    "description": "Steve Rogers struggles to embrace his role in the modern world and teams up with Natasha Romanoff, aka Black Widow, to battle a powerful yet shadowy enemy in present-day Washington, D.C.",
+    "duration": 135,
+    "rating": 1,
+    "totalRating": 239,
+    "releaseYear": 2014,
+    "releaseDate": "2014-04-02T00:00:00.000Z",
+    "createdAt": "2023-12-30T13:53:54.065Z",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Sci-Fi"
+    ],
+    "directors": [
+      "Anthony Russo",
+      "Joe Russo"
+    ],
+    "coverImage": "captain-america-the-winter-soldier-2014.jpg",
+    "actors": [
+      "Chris Evans",
+      "Frank Grillo",
+      "Sebastian Stan"
+    ],
+    "price": 57,
+    "__v": 0
+  },
+  {
+    "_id": "659021096854259411f5d1e9",
+    "name": "Behind the Candelabra",
+    "description": "Based on the autobiographical novel, the tempestuous 6-year relationship between Liberace and his (much younger) lover, Scott Thorson, is recounted.",
+    "duration": 118,
+    "rating": 1,
+    "totalRating": 325,
+    "releaseYear": 2013,
+    "releaseDate": "2013-05-21T00:00:00.000Z",
+    "createdAt": "2023-12-30T13:53:54.065Z",
+    "genres": [
+      "Biography",
+      "Drama",
+      "Romance"
+    ],
+    "directors": [
+      "Steven Soderbergh"
+    ],
+    "coverImage": "behind-the-candelabra-2013.jpg",
+    "actors": [
+      "Matt Damon",
+      "Scott Bakula",
+      "Eric Zuckerman"
+    ],
+    "price": 59,
+    "__v": 0
+  },
+  {
+    "_id": "659021096854259411f5d1ea",
+    "name": "The Dark Knight Rises",
+    "description": "Eight years on, a new evil rises from where the Batman and Commissioner Gordon tried to bury it, causing the Batman to resurface and fight to protect Gotham City... the very city which brands him an enemy.",
+    "duration": 165,
+    "rating": 1,
+    "totalRating": 530,
+    "releaseYear": 2012,
+    "releaseDate": "2012-07-16T00:00:00.000Z",
+    "createdAt": "2023-12-30T13:53:54.065Z",
+    "genres": [
+      "Action",
+      "Crime",
+      "Thriller"
+    ],
+    "directors": [
+      "Christopher Nolan"
+    ],
+    "coverImage": "the-dark-knight-rises-2012.jpg",
+    "actors": [
+      "Christian Bale",
+      "Tom Hardy",
+      "Anne Hathaway"
+    ],
+    "price": 57,
+    "__v": 0
+  },
+  {
+    "_id": "659021096854259411f5d1e4",
+    "name": "We're the Millers",
+    "description": "A veteran pot dealer creates a fake family as part of his plan to move a huge shipment of weed into the U.S. from Mexico.",
+    "duration": 110,
+    "rating": 1,
+    "totalRating": 230,
+    "releaseYear": 2013,
+    "releaseDate": "2013-08-03T00:00:00.000Z",
+    "createdAt": "2023-12-30T13:53:54.065Z",
+    "genres": [
+      "Comedy",
+      "Crime"
+    ],
+    "directors": [
+      "Rawson Marshall Thurber"
+    ],
+    "coverImage": "we-are-the-millers-2013.jpg",
+    "actors": [
+      "Jason Sudeikis",
+      "Jennifer Aniston",
+      "Emma Roberts"
+    ],
+    "price": 47,
+    "__v": 0
+  },
+  {
+    "_id": "659021096854259411f5d1e5",
+    "name": "Divergent",
+    "description": "Beatrice Prior, a teenager with a special mind, finds her life threatened when an authoritarian leader seeks to exterminate her kind in her effort to seize control of their divided society.",
+    "duration": 117,
+    "rating": 1,
+    "totalRating": 164,
+    "releaseYear": 2014,
+    "releaseDate": "2014-03-20T00:00:00.000Z",
+    "createdAt": "2023-12-30T13:53:54.065Z",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Romance",
+      "Sci-Fi"
+    ],
+    "directors": [
+      "Neil Burger"
+    ],
+    "coverImage": "Divergent-2014.jpg",
+    "actors": [
+      "Shailene Woodley",
+      "Kate Winslet",
+      "Zoe Kravitz"
+    ],
+    "price": 52,
+    "__v": 0
+  },
+  {
+    "name": "Inception",
+    "description": "A thief who enters the minds of others to steal their secrets gets a chance to erase his criminal history by completing an impossible task: planting an idea into a target's subconscious.",
+    "duration": 148,
+    "rating": 5,
+    "totalRating": 1243,
+    "releaseYear": 2010,
+    "releaseDate": "2010-07-16T00:00:00.000Z",
+    "createdAt": "2023-12-31T09:00:00.000Z",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Sci-Fi",
+      "Thriller"
+    ],
+    "directors": [
+      "Christopher Nolan"
+    ],
+    "coverImage": "Inception-2010.jpg",
+    "actors": [
+      "Leonardo DiCaprio",
+      "Joseph Gordon-Levitt",
+      "Elliot Page"
+    ],
+    "price": 70,
+    "__v": 0
+  },
+  {
+   
+    "name": "The Matrix",
+    "description": "A computer hacker learns about the true nature of reality and his role in the war against its controllers.",
+    "duration": 136,
+    "rating": 4,
+    "totalRating": 1987,
+    "releaseYear": 1999,
+    "releaseDate": "1999-03-31T00:00:00.000Z",
+    "createdAt": "2023-12-31T09:00:01.000Z",
+    "genres": [
+      "Action",
+      "Sci-Fi"
+    ],
+    "directors": [
+      "Lana Wachowski",
+      "Lilly Wachowski"
+    ],
+    "coverImage": "TheMatrix-1999.jpg",
+    "actors": [
+      "Keanu Reeves",
+      "Laurence Fishburne",
+      "Carrie-Anne Moss"
+    ],
+    "price": 60,
+    "__v": 0
+  },
+  {
+   
+    "name": "Blade Runner 2049",
+    "description": "A young blade runner's discovery of a long-buried secret leads him to track down former blade runner Rick Deckard, who's been missing for thirty years.",
+    "duration": 164,
+    "rating": 4,
+    "totalRating": 898,
+    "releaseYear": 2017,
+    "releaseDate": "2017-10-06T00:00:00.000Z",
+    "createdAt": "2023-12-31T09:00:02.000Z",
+    "genres": [
+      "Drama",
+      "Mystery",
+      "Sci-Fi",
+      "Thriller"
+    ],
+    "directors": [
+      "Denis Villeneuve"
+    ],
+    "coverImage": "BladeRunner2049-2017.jpg",
+    "actors": [
+      "Ryan Gosling",
+      "Harrison Ford",
+      "Ana de Armas"
+    ],
+    "price": 75,
+    "__v": 0
+  },
+  {
+   
+    "name": "The Martian",
+    "description": "An astronaut stranded on Mars strives to survive while NASA works to bring him home.",
+    "duration": 144,
+    "rating": 4,
+    "totalRating": 1276,
+    "releaseYear": 2015,
+    "releaseDate": "2015-10-02T00:00:00.000Z",
+    "createdAt": "2023-12-31T09:00:04.000Z",
+    "genres": [
+      "Adventure",
+      "Drama",
+      "Sci-Fi"
+    ],
+    "directors": [
+      "Ridley Scott"
+    ],
+    "coverImage": "TheMartian-2015.jpg",
+    "actors": [
+      "Matt Damon",
+      "Jessica Chastain",
+      "Kristen Wiig"
+    ],
+    "price": 70,
+    "__v": 0
+  },
+  {
+   
+    "name": "Avatar",
+    "description": "A paraplegic marine dispatched to the moon Pandora on a unique mission becomes torn between following his orders and protecting the world he feels is his home.",
+    "duration": 162,
+    "rating": 5,
+    "totalRating": 2345,
+    "releaseYear": 2009,
+    "releaseDate": "2009-12-18T00:00:00.000Z",
+    "createdAt": "2023-12-31T09:00:05.000Z",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Fantasy",
+      "Sci-Fi"
+    ],
+    "directors": [
+      "James Cameron"
+    ],
+    "coverImage": "Avatar-2009.jpg",
+    "actors": [
+      "Sam Worthington",
+      "Zoe Saldana",
+      "Sigourney Weaver"
+    ],
+    "price": 75,
+    "__v": 0
+  },
+  {
+   
+    "name": "Gravity",
+    "description": "Two astronauts stranded in space attempt to survive after an accident leaves them adrift.",
+    "duration": 91,
+    "rating": 4,
+    "totalRating": 1011,
+    "releaseYear": 2013,
+    "releaseDate": "2013-08-28T00:00:00.000Z",
+    "createdAt": "2023-12-31T09:00:06.000Z",
+    "genres": [
+      "Drama",
+      "Sci-Fi",
+      "Thriller"
+    ],
+    "directors": [
+      "Alfonso Cuarón"
+    ],
+    "coverImage": "Gravity-2013.jpg",
+    "actors": [
+      "Sandra Bullock",
+      "George Clooney",
+      "Ed Harris"
+    ],
+    "price": 65,
+    "__v": 0
+  },
+  {
+   
+    "name": "The Fifth Element",
+    "description": "In the colorful future, a cab driver unwittingly becomes the central figure in the search for a legendary cosmic weapon to keep evil and chaos at bay.",
+    "duration": 126,
+    "rating": 4,
+    "totalRating": 893,
+    "releaseYear": 1997,
+    "releaseDate": "1997-05-09T00:00:00.000Z",
+    "createdAt": "2023-12-31T09:00:07.000Z",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Sci-Fi"
+    ],
+    "directors": [
+      "Luc Besson"
+    ],
+    "coverImage": "TheFifthElement-1997.jpg",
+    "actors": [
+      "Bruce Willis",
+      "Milla Jovovich",
+      "Gary Oldman"
+    ],
+    "price": 60,
+    "__v": 0
+  },
+  {
+   
+    "name": "The Avengers",
+    "description": "A team of superheroes must come together to stop a mischievous Loki and his alien army from enslaving humanity.",
+    "duration": 143,
+    "rating": 4,
+    "totalRating": 1789,
+    "releaseYear": 2012,
+    "releaseDate": "2012-04-25T00:00:00.000Z",
+    "createdAt": "2023-12-31T09:00:08.000Z",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Sci-Fi"
+    ],
+    "directors": [
+      "Joss Whedon"
+    ],
+    "coverImage": "TheAvengers-2012.jpg",
+    "actors": [
+      "Robert Downey Jr.",
+      "Chris Evans",
+      "Scarlett Johansson"
+    ],
+    "price": 75,
+    "__v": 0
+  },
+  {
+   
+    "name": "District 9",
+    "description": "An extraterrestrial race forced to live in slum-like conditions on Earth suddenly finds a kindred spirit in a government agent who's exposed to their biotechnology.",
+    "duration": 112,
+    "rating": 4,
+    "totalRating": 987,
+    "releaseYear": 2009,
+    "releaseDate": "2009-08-14T00:00:00.000Z",
+    "createdAt": "2023-12-31T09:00:09.000Z",
+    "genres": [
+      "Action",
+      "Sci-Fi",
+      "Thriller"
+    ],
+    "directors": [
+      "Neill Blomkamp"
+    ],
+    "coverImage": "District9-2009.jpg",
+    "actors": [
+      "Sharlto Copley",
+      "David James",
+      "Jason Cope"
+    ],
+    "price": 65,
+    "__v": 0
+  },
+  {
+   
+    "name": "Prometheus",
+    "description": "A team of scientists explores the universe after discovering a clue to the origins of mankind, leading them on a thrilling journey to the darkest corners of the universe.",
+    "duration": 124,
+    "rating": 3,
+    "totalRating": 865,
+    "releaseYear": 2012,
+    "releaseDate": "2012-06-08T00:00:00.000Z",
+    "createdAt": "2023-12-31T09:00:10.000Z",
+    "genres": [
+      "Adventure",
+      "Mystery",
+      "Sci-Fi"
+    ],
+    "directors": [
+      "Ridley Scott"
+    ],
+    "coverImage": "Prometheus-2012.jpg",
+    "actors": [
+      "Noomi Rapace",
+      "Michael Fassbender",
+      "Charlize Theron"
+    ],
+    "price": 70,
+    "__v": 0
+  },
+  {
+   
+    "name": "Looper",
+    "description": "In a future where time travel exists, hired guns called 'loopers' eliminate targets sent from the future. When a looper's future self is sent back to be killed, chaos ensues.",
+    "duration": 119,
+    "rating": 4,
+    "totalRating": 754,
+    "releaseYear": 2012,
+    "releaseDate": "2012-09-28T00:00:00.000Z",
+    "createdAt": "2023-12-31T09:00:11.000Z",
+    "genres": [
+      "Action",
+      "Crime",
+      "Drama",
+      "Sci-Fi",
+      "Thriller"
+    ],
+    "directors": [
+      "Rian Johnson"
+    ],
+    "coverImage": "Looper-2012.jpg",
+    "actors": [
+      "Joseph Gordon-Levitt",
+      "Bruce Willis",
+      "Emily Blunt"
+    ],
+    "price": 65,
+    "__v": 0
+  },
+  {
+    "name": "Edge of Tomorrow",
+    "description": "A military officer finds himself caught in a time loop in a war with an alien race. His skills increase as he faces the same brutal combat scenarios, and his death restarts the loop.",
+    "duration": 113,
+    "rating": 4,
+    "totalRating": 1087,
+    "releaseYear": 2014,
+    "releaseDate": "2014-06-06T00:00:00.000Z",
+    "createdAt": "2023-12-31T09:00:12.000Z",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Sci-Fi"
+    ],
+    "directors": [
+      "Doug Liman"
+    ],
+    "coverImage": "EdgeofTomorrow-2014.jpg",
+    "actors": [
+      "Tom Cruise",
+      "Emily Blunt",
+      "Bill Paxton"
+    ],
+    "price": 70,
+    "__v": 0
+  }
+]

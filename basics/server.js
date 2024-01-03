@@ -5,10 +5,15 @@ dotenv.config({ path: "./config.env" });
 const movieController = require("./Controllers/movieController")
 const mongoose = require("mongoose");
 const app = express();
-
 app.use(express.json());       // To parse the request body and get the request body     This line is necessary even though method definition is in another file
 
-mongoose.connect(process.env.CON_STR)
+const router = express.Router();    // This will create a router object
+
+
+mongoose.connect(process.env.MONGO_CON_STR, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+})
 .then((con) => { 
     console.log("Connected to MongoDB")
     // console.log(con.connections)
@@ -16,8 +21,8 @@ mongoose.connect(process.env.CON_STR)
 
 /*
 const testMovie = new Movie({
-    name: "Beauty and the Beast",
-    description: "It's my favorite movie of all time starring all time great Emma Watson",
+    name: "Test Movie",
+    description: "It's my favorite movie of all time starring all time great Cillian Murphy",
     duration: 120,
     rating: 9.9,
 })
@@ -32,16 +37,22 @@ testMovie.save()       // This will save the document in database
 
 // ALL THE ROUTES
 //      For /api/v1/movies
-app.post("/api/v1/movies", movieController.createMovie)
-app.get("/api/v1/movies", movieController.getAllMovies)
-
+// app.get("/api/v1/movies", movieController.getAllMovies)
+// app.get("/api/v1/movies", movieController.getFilteredMovies)       // Comment above line and uncomment this line to see the difference
+app.get("/api/v1/movies", movieController.getMovieHandler)            // It takes care of both above lines based on the query string
+app.post("/api/v1/movies", movieController.createMovie)            // It takes care of both above lines based on the query string
 
 //      For /api/v1/movies/:id
 app.get("/api/v1/movies/:id", movieController.getMovie)
 app.patch("/api/v1/movies/:id", movieController.updateMovie)
 app.delete("/api/v1/movies/:id", movieController.deleteMovie)
 
+// FOR /api/v1/movies/stats
+app.get("/api/v1/movies/stats", movieController.getMovieStats)
 
+
+// FOR /api/v1/movies/:genre
+app.get("/api/v1/movies/genre", movieController.genreList)
 
 const PORT = 8000;
 app.listen(PORT, () => {
