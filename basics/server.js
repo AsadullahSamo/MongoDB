@@ -1,19 +1,14 @@
-const express = require("express");
 const dotenv = require("dotenv")
 dotenv.config({ path: "./config.env" });
+const express = require("express");
 
 const movieController = require("./Controllers/movieController")
 const mongoose = require("mongoose");
 const app = express();
 app.use(express.json());       // To parse the request body and get the request body     This line is necessary even though method definition is in another file
 
-const router = express.Router();    // This will create a router object
 
-
-mongoose.connect(process.env.MONGO_CON_STR, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-})
+mongoose.connect(`${process.env.CON_STR}`)
 .then((con) => { 
     console.log("Connected to MongoDB")
     // console.log(con.connections)
@@ -47,12 +42,7 @@ app.get("/api/v1/movies/:id", movieController.getMovie)
 app.patch("/api/v1/movies/:id", movieController.updateMovie)
 app.delete("/api/v1/movies/:id", movieController.deleteMovie)
 
-// FOR /api/v1/movies/stats
-app.get("/api/v1/movies/stats", movieController.getMovieStats)
-
-
-// FOR /api/v1/movies/:genre
-app.get("/api/v1/movies/genre", movieController.genreList)
+// Check abc.js for more route and aggregation pipeline examples
 
 const PORT = 8000;
 app.listen(PORT, () => {

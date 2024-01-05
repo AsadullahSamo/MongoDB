@@ -163,9 +163,10 @@ exports.getMovieHandler = async(req, res) => {
 }
 
 exports.getMovieStats = async (req, res) => {
+    let movies;
     try{
-        const stats = await Movie.aggregate([
-            { $match: {ratings: {$gte: 4.5}}},
+        movies = await Movie.aggregate([
+            // { $match: {ratings: {$gte: 4.5}}},
             { $group: {
                 _id: '$releaseYear',
                 avgRating: { $avg: '$ratings'},
@@ -175,15 +176,15 @@ exports.getMovieStats = async (req, res) => {
                 priceTotal: { $sum: '$price'},
                 movieCount: { $sum: 1}
             }},
-            { $sort: { minPrice: 1}}
-            //{ $match: {maxPrice: {$gte: 60}}}
+            { $sort: { minPrice: 1}},
+            { $match: {maxPrice: {$gt: 60}}}
         ]);
 
         res.status(200).json({
             status: 'success',
-            count: stats.length,
+            count: movies.length,
             data: {
-                stats
+                movies,
             }
         });
     }catch(err) {
@@ -199,34 +200,31 @@ exports.getMovieStats = async (req, res) => {
 
 
 
-exports.genreList= async (req, res) => {
-        const genre = req.params.genre;
-        const movies = await Movie.aggregate([
-            { $unwind: "$genres" },     // This will unwind (Destructure) the genres array and will create a document for each genre
+exports.genreList = async (req, res) => {
+    let movies;
+    try {
+        movies = await Movie.aggregate([
+            { $unwind: "$genres" },
             { $group: { 
-                _id: "$genres",                // This will group all the documents having same genre
-                numMovies: {$sum: 1},         // This will add 1 to numMovies field for each document and gives the total number of movies for each genre
-                movies: {$push: "$name"} 
-            }},                             // This will create an array of movies for each genre,
-            { $addFields: { genre: "$_id"} },  // This will add a new field genre and will assign the value of _id to it
-            { $project: {_id: 0}}           // This will exclude _id field from the response
-            
+                _id: "$genres",
+                numMovies: { $sum: 1 },
+                movies: { $push: "$name" }
+            }},
+            { $addFields: { genre: "$_id" } },
+            { $project: { _id: 0 } }
+        ]);
 
-        ])
-        .then((data) => {
-            res.status(200).json({
-                status: "success",
-                data: {
-                    movies,
-                }
-            });
-        })
-        .catch(err => {
-            res.status(404).json({
-                status: "fail",
-                message: err.message
-            });
-            console.log(`Error occured: ${err}`);
-        })
-    
+        res.status(200).json({
+            status: "success",
+            data: {
+                movies,
+            }
+        });
+    } catch (err) {
+        res.status(404).json({
+            status: "fail",
+            message: err.message
+        });
+        console.log(`Error occurred: ${err.message}`);
+    }
 }
